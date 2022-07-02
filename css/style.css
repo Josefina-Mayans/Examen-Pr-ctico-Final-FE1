@@ -57,9 +57,9 @@ nav ul {
 
 }
 
-nav ul a{
+nav ul a {
     color: var(--darkBlue);
-    font-size: 13px;
+    font-size: 0.81rem;
     font-weight: 500;
 }
 
@@ -82,90 +82,88 @@ header button {
 /***************MAIN******************/
 #home {
     display: flex;
-    justify-content: space-evenly;
-    padding: 0 11vw;
     flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
     margin-top: 20vh;
+    padding: 0 11vw;
 }
 
 .hero {
-    width: 439px;
     max-width: 100%;
+    width: 439px;
 }
 
 h1 {
-    font-weight: 700;
-    font-size: 50px;
     color: var(--darkBlue);
+    font-size: 3.15rem;
     margin: 0px;
 
 }
 
 .hero-phrase {
+    color: var(--darkGreyBlue);
     font-weight: 500;
-    font-size: 1rem;
-    color: var(--veryDarkBlue);
-    margin-top: 28px;
+    line-height: 157.1%;
     margin-bottom: 28px;
-    line-height: 157.1%
+    margin-top: 28px;
+    width: 80%;
 }
 
 .graph {
-    width: 580px;
     max-width: 100%;
+    width: 580px;
 }
 
 #about {
     display: flex;
-    justify-content: space-evenly;
-    padding: 0 11vw;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     margin: 15vh 0;
+    padding: 0 11vw;
 }
 
 .explainer {
-    width: 433px;
     max-width: 100%;
+    width: 433px;
 }
 
 h3 {
-    font-weight: 700;
-    font-size: 36px;
     color: var(--darkBlue);
+    font-size: 2.25rem;
     margin: 0px;
     padding-bottom: 4vh;
 }
 
 .explainer-phrase {
+    color: var(--darkGreyBlue);
     font-weight: 500;
-    font-size: 1rem;
-    color: var(--veryDarkBlue);
+    line-height: 151.1%;
     margin: 0px;
     padding-bottom: 50px;
-    line-height: 151.1%;
+    width: 88%;
 }
 
 
 .lista {
-    width: 556px;
-    max-width: 95%;
     align-content: space-between;
+    max-width: 95%;
+    width: 556px;
 }
 
 .fragment {
-    display: flex;
     align-items: flex-start;
+    display: flex;
 
 }
 
 .botones {
-    width: 69px;
-    height: 43px;
     background-color: var(--brightRed);
     border-radius: 30px;
     border: none;
     color: white;
     font-size: 1rem;
+    height: 43px;
+    width: 69px;
 }
 
 .text {
@@ -175,25 +173,25 @@ h3 {
 }
 
 h4 {
-    font-weight: 700;
-    font-size: 18px;
-    letter-spacing: -1.5%;
     color: var(--darkBlue);
+    font-weight: 700;
+    font-size: 1.13rem;
+    letter-spacing: -1.5%;
     margin: 0px;
 }
 
 .items {
+    color: var(--darkGreyBlue);
     font-weight: 100;
     font-size: 1rem;
     letter-spacing: -1%;
-    color: var(--darkGreyBlue);
     line-height: 26px;
 
 
 }
 
 .comments-title {
-    font-size: 39.21px;
+    font-size: 2.45rem;
     width: 100%;
     color: var(--darkBlue);
     text-align: center;
@@ -284,7 +282,7 @@ article p {
     margin-top: 18.6px;
     width: 134px;
     height: 44px;
-    font-size: 13px;
+    font-size: 0.81rem;
     border: none;
     border-radius: 50px;
     font-family: 'Be Vietnam Pro', sans-serif;
@@ -376,7 +374,7 @@ form input {
     border: none;
     font-family: 'Be Vietnam Pro', sans-serif;
     font-weight: 200;
-    font-size: 14px;
+    font-size: 0.88rem;
     color: var(--darkGreyBlue);
     width: 201px;
 }
@@ -388,7 +386,7 @@ form button {
     height: 6vh;
     color: white;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 0.81rem;
     border: none;
     border-radius: 50px;
     background-color: var(--brightRed);
@@ -399,7 +397,7 @@ form button {
 .copyright {
     color: var(--darkGreyBlue);
     font-weight: 500;
-    font-size: 12.5px;
+    font-size: 0.78rem;
     align-self: flex-end;
     margin: 0px;
 }
@@ -485,8 +483,25 @@ footer div ul li a:hover {
     }
 
     h1 {
-        font-size: 34px;
+        font-size: 2.15rem;
         text-align: center;
+    }
+
+    .hero-phrase {
+        text-align: center;
+        width: auto;
+    }
+
+    .hero .get-started {
+        margin-left: 20vw;
+    }
+
+    .explainer {
+        text-align: center;
+    }
+
+    .explainer-phrase {
+        width: auto;
     }
 
 
@@ -499,7 +514,7 @@ footer div ul li a:hover {
     }
 
     .comments-title {
-        font-size: 30px;
+        font-size: 1.9rem;
     }
 
     .anisha {
@@ -529,17 +544,17 @@ footer div ul li a:hover {
         flex-direction: column-reverse;
         margin-top: 40px;
         margin-bottom: 80px;
-        height:15vh;
-        width:267px;
+        height: 15vh;
+        width: 267px;
         align-items: center;
     }
 
     .logo-footer {
-            width: 146px;
+        width: 146px;
     }
 
     .social {
-        display:flex;
+        display: flex;
         justify-content: space-between;
         width: 75vw;
     }
@@ -548,9 +563,9 @@ footer div ul li a:hover {
         transform: scale(1.5);
     }
 
-    .footer-links{
-        width:267px;
-        margin-top:15px;
+    .footer-links {
+        width: 267px;
+        margin-top: 15px;
     }
 
     form {
@@ -566,7 +581,7 @@ footer div ul li a:hover {
         display: block;
         color: var(--darkGreyBlue);
         font-weight: 500;
-        font-size: 12.5px;
+        font-size: 0.78rem;
         position: absolute;
         right: 20vw;
         bottom: 50px;
