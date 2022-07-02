@@ -1,12 +1,7 @@
-/**General**/
+/*****************GENERAL*****************/
 * {
-    font-family: 'Be Vietnam Pro', sans-serif;
     box-sizing: border-box;
-}
-
-html {
-    font-size: 16px;
-    margin: 0px;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 :root {
@@ -18,72 +13,73 @@ html {
     --LightGreyVariant: rgb(249, 249, 249);
 }
 
-body {
-    background-image: url ("../imagenes/bg-simplify-section-desktop");
+html {
+    font-size: 16px;
     margin: 0px;
 }
 
-/**HEADER**/
-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 11vw;
-    flex-wrap: wrap;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 15vh;
-    z-index: 100;
-    background-color: white;
+body {
+    background-image: url("/imagenes/bg-tablet-pattern.svg");
+    background-repeat: space;
+    margin: 0px;
 }
 
-.hamburguesa {
-    display:none;
+/*******************HEADER*****************/
+header {
+    align-items: center;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    height: 15vh;
+    justify-content: space-around;
+    left: 0;
+    padding: 0 11vw;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 100;
 }
 
 .logo-img {
     width: 145.54px;
-    height: 23.74px;
-    align-self: center;
-
 }
 
-/**Navbar**/
-nav {
-    display: flex;
-    justify-content: space-evenly;
+.hamburguesa {
+    display: none;
 }
 
+
+/*****************NAVBAR*****************/
 nav ul {
-    text-decoration: none;
-    color: var(--darkBlue);
-    font-weight: 500;
-    list-style: none;
-    height: 50%;
     display: flex;
-    font-size: 13px;
     gap: 28px;
-    align-self: center;
+    list-style: none;
 
 }
 
+nav ul a{
+    color: var(--darkBlue);
+    font-size: 13px;
+    font-weight: 500;
+}
 
 .get-started {
-    width: 134px;
-    height: 44px;
-    color: white;
-    font-size: 13px;
+    background-color: var(--brightRed);
     border: none;
     border-radius: 50px;
-    background-color: var(--brightRed);
-    font-family: 'Be Vietnam Pro', sans-serif;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    color: white;
+    font-size: 13px;
+    height: 44px;
+    width: 134px;
 
 }
 
-/*MAIN*/
+header button {
+    display: block;
+}
+
+/***************MAIN******************/
 #home {
     display: flex;
     justify-content: space-evenly;
@@ -124,7 +120,7 @@ h1 {
     justify-content: space-evenly;
     padding: 0 11vw;
     flex-wrap: wrap;
-    margin: 15vh 0
+    margin: 15vh 0;
 }
 
 .explainer {
@@ -145,7 +141,7 @@ h3 {
     font-size: 1rem;
     color: var(--veryDarkBlue);
     margin: 0px;
-    height: 9.7vh;
+    padding-bottom: 50px;
     line-height: 151.1%;
 }
 
@@ -170,7 +166,6 @@ h3 {
     border: none;
     color: white;
     font-size: 1rem;
-    font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 .text {
@@ -180,7 +175,7 @@ h3 {
 }
 
 h4 {
-    font-weight: 1000;
+    font-weight: 700;
     font-size: 18px;
     letter-spacing: -1.5%;
     color: var(--darkBlue);
@@ -199,11 +194,10 @@ h4 {
 
 .comments-title {
     font-size: 39.21px;
-    line-height: 156.6%;
     width: 100%;
-    letter-spacing: -1%;
     color: var(--darkBlue);
     text-align: center;
+    padding: 0px 5px;
 }
 
 .comments {
@@ -222,6 +216,9 @@ article {
     padding-bottom: 16px
 }
 
+.anisha .richard {
+    display: block;
+}
 
 article img {
     border-radius: 50%;
@@ -244,10 +241,15 @@ h5 {
 
 article p {
     text-align: center;
-    font-weight: 600;
+    font-weight: 200;
     font-size: 1rem;
     line-height: 156.6%;
     color: var(--darkGreyBlue);
+    margin: 16px
+}
+
+.puntitos-slider {
+    display: none;
 }
 
 .comments-button {
@@ -263,29 +265,43 @@ article p {
     display: flex;
     justify-content: space-around;
     font-weight: 900;
-    font-size: 30px;
+    font-size: 1.8rem;
     line-height: 60px;
     align-items: center;
     letter-spacing: -0.05%;
     color: white;
-    height: 25vh;
     flex-wrap: wrap;
+    padding: 7vh 11.45vw;
+}
 
+.banner h2 {
+    margin: 0px 0px 18.6px
 }
 
 .final-button {
     background-color: white;
     color: var(--brightRed);
+    margin-top: 18.6px;
+    width: 134px;
+    height: 44px;
+    font-size: 13px;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
 
-
+/***************FOOTER*************/
 footer {
     padding-left: 11vw;
     padding-right: 11vw;
-    padding-top: 6vh;
+    padding-top: 7.47vh;
     padding-bottom: 6vh;
     display: flex;
-    background-color: var(--veryDarkBlue)
+    justify-content: space-between;
+    background-color: var(--veryDarkBlue);
+    max-width: 100vw;
+    flex-wrap: wrap-reverse;
+    position: relative;
 }
 
 .socialAndLogo {
@@ -307,19 +323,28 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items:flex-start
+    height: 141px;
+    width: 392px;
+    max-width: 100%
 }
 
-footer div ul{
+footer div ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     color: white;
-    font-weight: 100;
     font-size: 1rem;
+    font-weight: 100;
     list-style: none;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    margin: 0px;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .contact {
     display: flex;
     flex-direction: column;
@@ -331,35 +356,35 @@ form {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-}
-
-form label, form span {
-    visibility: hidden;
+    position: relative;
 
 }
+
+form label,
+form span {
+    display: none;
+
+}
+
 
 form input {
     display: flex;
     align-items: center;
     padding: 7px;
-    width: 14vw;
     height: 5vh;
     border-radius: 50px;
     border: none;
     font-family: 'Be Vietnam Pro', sans-serif;
-    font-weight: 600;
+    font-weight: 200;
     font-size: 14px;
     color: var(--darkGreyBlue);
+    width: 201px;
 }
 
-form input:invalid{
-    border: 4px solid red;
 
-}
 
 form button {
-    width: 5vw;
+    width: 63px;
     height: 6vh;
     color: white;
     font-weight: 500;
@@ -376,21 +401,175 @@ form button {
     font-weight: 500;
     font-size: 12.5px;
     align-self: flex-end;
+    margin: 0px;
 }
 
+.copyright-mobile {
+    display: none;
+}
+
+/*************Pseudoselectores*************/
+
+nav ul a:hover {
+    color: var(--darkGreyBlue)
+}
+
+.get-started:hover {
+    background-color: lightsalmon;
+}
+
+.footer-links ul:nth-child(1) {
+    padding-left: 0px;
+}
+
+.footer-links ul:nth-child(2) {
+    padding-left: 0px;
+}
+
+form input:invalid {
+    border: 4px solid red;
+}
+
+form:invalid::after {
+    content: "Please insert a valid email";
+    color: red;
+    font-size: 0.8rem;
+    display: block;
+    position: absolute;
+    top: 55px;
+}
+
+form button:hover {
+    background-color: lightsalmon;
+}
+
+.final-button:hover {
+    color: lightsalmon;
+}
+
+svg:hover path {
+    fill: #f3603b;
+}
+
+footer div ul li a:hover {
+    color: var(--brightRed)
+}
+
+
+
+
+/**************MEDIA QUERIES************/
 
 @media (max-width:375px) {
 
     body {
         background-image: url('../imagenes/bg-tablet-pattern.svg');
         background-size: contain;
-        background-repeat: repeat x;
+    }
+
+    header {
+        justify-content: space-between;
+        padding-top: 6vh;
     }
 
     nav {
         visibility: hidden;
     }
 
-    .hamburguesa {display:block;}
+    .hamburguesa {
+        display: block;
+    }
+
+    header button {
+        display: none;
+    }
+
+    h1 {
+        font-size: 34px;
+        text-align: center;
+    }
+
+
+    h4 {
+        background-color: var(--VeryPaleRed);
+        padding-right: 0px;
+        margin-right: 0px;
+        width: 100%;
+        max-width: 100vw;
+    }
+
+    .comments-title {
+        font-size: 30px;
+    }
+
+    .anisha {
+        display: none;
+    }
+
+    .richard {
+        display: none;
+    }
+
+    .puntitos-slider {
+        display: block;
+        width: 80px;
+        margin-left: 40vw;
+        margin-top: 20px;
+    }
+
+    .banner {
+        text-align: center;
+    }
+
+    footer {
+        justify-content: center;
+    }
+
+    .socialAndLogo {
+        flex-direction: column-reverse;
+        margin-top: 40px;
+        margin-bottom: 80px;
+        height:15vh;
+        width:267px;
+        align-items: center;
+    }
+
+    .logo-footer {
+            width: 146px;
+    }
+
+    .social {
+        display:flex;
+        justify-content: space-between;
+        width: 75vw;
+    }
+
+    svg {
+        transform: scale(1.5);
+    }
+
+    .footer-links{
+        width:267px;
+        margin-top:15px;
+    }
+
+    form {
+        margin-bottom: 8vh;
+    }
+
+
+    .copyright {
+        display: none;
+    }
+
+    .copyright-mobile {
+        display: block;
+        color: var(--darkGreyBlue);
+        font-weight: 500;
+        font-size: 12.5px;
+        position: absolute;
+        right: 20vw;
+        bottom: 50px;
+    }
 
 }
