@@ -20,7 +20,8 @@ html {
 
 body {
     background-image: url("/imagenes/bg-tablet-pattern.svg");
-    background-repeat: space;
+    background-position: right top;
+    background-repeat: no-repeat;
     margin: 0px;
 }
 
@@ -414,6 +415,8 @@ nav ul a:hover {
 
 .get-started:hover {
     background-color: lightsalmon;
+    transform:scale(1.07);
+    transition: 0.5s;
 }
 
 .footer-links ul:nth-child(1) {
@@ -443,6 +446,8 @@ form button:hover {
 
 .final-button:hover {
     color: lightsalmon;
+    transform:scale(1.07);
+    transition: 0.5s;
 }
 
 svg:hover path {
